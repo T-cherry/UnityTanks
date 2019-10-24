@@ -52,6 +52,7 @@ public class TankShooting : MonoBehaviour
             m_Fired = false;
             m_CurrentLaunchForce = m_MinLaunchForce;
             m_ShootingAudio.clip = m_ChargingClip;
+            m_ShootingAudio.Play();
 
         }
         else if(Input.GetButton(m_FireButton) && !m_Fired)
